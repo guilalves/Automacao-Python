@@ -16,9 +16,9 @@ def config_email():
      # Configurações do email
     msg = email.message.Message()
     msg['Subject'] = "E-mail Automático"
-    msg['From'] = 'seugmail@gmail.com'
-    msg['To'] = 'emailparaquemvocequerenviar@gmail.com'
-    password = 'suasenhadogmail'
+    msg['From'] = input(str('De: '))
+    msg['To'] = input(str('Para: '))
+    password = input(str('Senha: '))
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 
