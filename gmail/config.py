@@ -9,7 +9,7 @@ def config_email():
     emojis = emoji.emojize(':v: :wink:', use_aliases=True)
 
     corpo_email = f"""
-    <p>Testando inteligência artifical para envio de emails automático feito em Python</p>
+    <p>Testando automação para envio de emails automático feito em Python</p>
     <p>Abs,</p>
     <p>Guilherme {emojis}</p>
     """
