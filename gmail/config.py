@@ -1,6 +1,7 @@
 import email.message
 import emoji
 import smtplib
+import getpass
 
 
 def config_email():
@@ -8,7 +9,7 @@ def config_email():
     emojis = emoji.emojize(':v: :wink:', use_aliases=True)
 
     corpo_email = f"""
-    <p>Testando inteligência artifical para envio de emails automático feito em Python</p>
+    <p>Testando automação para envio de emails automático feito em Python</p>
     <p>Abs,</p>
     <p>Guilherme {emojis}</p>
     """
@@ -18,7 +19,7 @@ def config_email():
     msg['Subject'] = 'E-mail Automático'
     msg['From'] = input(str('De: '))
     msg['To'] = input(str('Para: '))
-    password = input(str('Senha: '))
+    password = getpass.getpass('Senha: ')
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 

@@ -1,3 +1,3 @@
 # Automacao-Python
 
-Automatizando o disparo de emails automático do Gmail.
+Criações de automações com Python.
